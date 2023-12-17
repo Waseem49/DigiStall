@@ -26,10 +26,7 @@ export const AddProducts = (product) => async (dispatch) => {
   dispatch(setStatus(STATUS.LOADING));
 
   try {
-    await axios.post(
-      "https://easy-erin-viper-kilt.cyclic.app/api/products",
-      product
-    );
+    await axios.post("https://dummyjson.com/products?limit=100", product);
     dispatch(setStatus(STATUS.IDLE));
   } catch (error) {
     console.error(error);

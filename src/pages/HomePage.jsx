@@ -7,6 +7,7 @@ import { STATUS } from "../redux/ProductSlice";
 const HomePage = () => {
   const dispatch = useDispatch();
   const { data, status } = useSelector((state) => state.product);
+  console.log(data);
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -30,7 +31,7 @@ const HomePage = () => {
       <div className="productlist">
         <>
           {status !== STATUS.LOADING ? (
-            data?.data?.map((el) => <Product {...el} key={el._id} />)
+            data?.products?.map((el) => <Product {...el} key={el.id} />)
           ) : (
             <h1>Loading...</h1>
           )}

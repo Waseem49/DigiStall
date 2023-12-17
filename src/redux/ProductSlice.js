@@ -26,13 +26,11 @@ export const { setStatus, setProducts } = ProductSlice.actions;
 export default ProductSlice.reducer;
 
 export function fetchProducts() {
-  return async function fetchProductsThunk(dispatch, getState) {
+  return async function fetchProductsThunk(dispatch) {
     dispatch(setStatus(STATUS.LOADING));
 
     try {
-      const res = await fetch(
-        "https://easy-erin-viper-kilt.cyclic.app/api/products"
-      );
+      const res = await fetch("https://dummyjson.com/products?limit=100");
       const data = await res.json();
       dispatch(setProducts(data));
       dispatch(setStatus(STATUS.IDLE));
