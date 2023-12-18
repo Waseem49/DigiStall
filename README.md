@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+<h1 align="center">DigiStall</h1>
+<h3 align="center">DigiStall is your ultimate destination for all things cinema. Dive into the world of movies, explore the latest releases, discover hidden gems, and stay up-to-date with your favorite actors and directors.</h3>
+<br />
+<h2 align="center">🖥️ Tech Stack</h2>
+<p align="center">
+<!--    <img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="next" /> -->
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript" />
+    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=teal"   alt="react-router" />
+    <img src = "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="css3">
+<!--   <img src="https://img.shields.io/badge/Rest_API-02303A?style=for-the-badge&logo=react-router&logoColor=white" alt="restAPI" /> -->
+<!--   <img src="https://img.shields.io/badge/Json%20Web%20Token-339933?style=for-the-badge&logo=jsonwebtoken&logoColor=white" alt="Jwt"/> -->
+<!--   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5" /> -->
+<!--   <img src="https://img.shields.io/badge/Bcrypt-8A2BE2?style=for-the-badge&logo=bcrypt&logoColor=white" alt="bcrypt"/> -->
+<!--    <img src="https://img.shields.io/badge/Mongoose-02303A?style=for-the-badge&logo=mongoose&logoColor=white&color=red" alt="mongoose"/> -->
+</p>
+<h4 align="center">Deployed On:</h4>
+<p align="center">
+  <img src="https://img.shields.io/badge/Vercel-00C7B7?style=for-the-badge&logo=vercel&logoColor=white" alt="vercel" />
+</p>
+<h3 align="center"><a href="https://ombd-c-waseem49.vercel.app/" target="_blank"><strong>Want to see live preview »</strong></a></h3>
+<br />
+<br />
+"Discover and organize your favorite movies with our OMDb app! Easily search for movies, explore detailed information, and add them to your personalized favorites list. Whether you're a movie enthusiast or looking for your next watch, our app lets you curate your collection. Seamlessly navigate your favorite movies in one place, making it a breeze to keep track of the films you love. Experience the joy of movie discovery and create your watchlist today!"
+<br />
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Page
+- Landing Page
+- Favorite-list & Movie-Details Page
+## 🚀 User can Do
+- User can add a Movie to Favorite-list
+<br />
+<br />
+<h1 align="center"> 🏷️ Landing Page or Home Page </h1>
+<p display="flex" align="center">
+<img src="https://github.com/Waseem49/DigiStall/assets/111652485/11968fd0-bc75-43f4-9b61-33f273a121a9" width="auto" alt="homepage"/>
+</p>
+<h1 align="center"> 🏷️Cart Page </h1>
+<p display="flex" align="center">
+<img src="https://github.com/Waseem49/DigiStall/assets/111652485/6e7084fe-a295-493c-8dde-9c9c74ba1711" width="auto" alt="Landing page"/>
+<p />
+<!-- <br />
+<h1 align="center"> 🏷️ Mobile View</h1>
+<p display="flex" align="center">
+<img src="https://github.com/Waseem49/Ombd-C/assets/111652485/521b4f4b-3c14-475c-9d65-c6997a51d842" width="auto" alt="mobile view"/>
+<p /> -->
+<br />
+<br />
+<h2 >Contact</h2>   
+If you want to contact me, you can reach me through below handles. 
+<br />
+   
+[![linkedin](https://img.shields.io/badge/Md_Waseem_Akram-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/waseem49/)
+[![GitHub](https://img.shields.io/badge/Md_Waseem_Akram-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Waseem49)
+<br />
+© 2023 Md Waseem Akram
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Show your support
+Give a ⭐️ if you like this project!
+<br />
