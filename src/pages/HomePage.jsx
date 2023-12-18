@@ -1,21 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Product from "../components/Product";
 import { fetchProducts } from "../redux/ProductSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { STATUS } from "../redux/ProductSlice";
+import Loader from "../components/Loader";
 
 const HomePage = () => {
   const dispatch = useDispatch();
-  const { data, status } = useSelector((state) => state.product);
-  console.log(data);
+  const { data, status } = useSelector((state) => state.products);
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
-    dispatch(fetchProducts());
+    dispatch(fetchProducts(page));
+  }, [page]);
+
+  const handleScroll = async () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop + 1 >=
+      document.documentElement.scrollHeight
+    ) {
+      setPage((p) => p + 1);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   if (status === STATUS.ERROR) {
-    return <h1>SomeThing Went Wrong..</h1>;
+    return <h1>Something Went Wrong...</h1>;
   }
+
   return (
     <>
       <div className="carasol">
@@ -30,13 +48,12 @@ const HomePage = () => {
       </div>
       <div className="productlist">
         <>
-          {status !== STATUS.LOADING ? (
-            data?.products?.map((el) => <Product {...el} key={el.id} />)
-          ) : (
-            <h1>Loading...</h1>
-          )}
+          {data?.map((el) => (
+            <Product {...el} key={el.id} />
+          ))}
         </>
       </div>
+      {page < 10 ? status === STATUS.LOADING && <Loader /> : ""}
     </>
   );
 };

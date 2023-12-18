@@ -7,14 +7,14 @@ export const STATUS = Object.freeze({
 });
 
 export const ProductSlice = createSlice({
-  name: "product",
+  name: "products",
   initialState: {
     data: [],
     status: STATUS.IDLE,
   },
   reducers: {
     setProducts: (state, action) => {
-      state.data = action.payload;
+      state.data = [...state.data, ...action.payload.products];
     },
     setStatus: (state, action) => {
       state.status = action.payload;
@@ -25,12 +25,14 @@ export const ProductSlice = createSlice({
 export const { setStatus, setProducts } = ProductSlice.actions;
 export default ProductSlice.reducer;
 
-export function fetchProducts() {
+export function fetchProducts(skip) {
   return async function fetchProductsThunk(dispatch) {
     dispatch(setStatus(STATUS.LOADING));
 
     try {
-      const res = await fetch("https://dummyjson.com/products?limit=100");
+      const res = await fetch(
+        `https://dummyjson.com/products?limit=10&skip=${skip * 10}`
+      );
       const data = await res.json();
       dispatch(setProducts(data));
       dispatch(setStatus(STATUS.IDLE));

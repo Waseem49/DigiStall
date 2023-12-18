@@ -26,7 +26,7 @@ export const AddProducts = (product) => async (dispatch) => {
   dispatch(setStatus(STATUS.LOADING));
 
   try {
-    await axios.post("https://dummyjson.com/products?limit=100", product);
+    await axios.post("https://dummyjson.com/products/add", product);
     dispatch(setStatus(STATUS.IDLE));
   } catch (error) {
     console.error(error);

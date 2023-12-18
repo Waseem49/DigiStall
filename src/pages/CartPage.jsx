@@ -22,10 +22,12 @@ const CartPage = () => {
       <div className="cartpage">
         <div className="cartlist">
           {cartproduct?.map((el) => (
-            <div key={el._id} className="cartitem">
-              <img src={el.imgurl} alt={el.title} />
-              <h3>{el.title}</h3>
-              <button onClick={() => handledelete(el._id)}>Remove</button>
+            <div key={el.id} className="cartitem">
+              <img src={el.thumbnail} alt={el.title} />
+              <div className="titlebtn">
+                <h3>{el.title}</h3>
+                <button onClick={() => handledelete(el.id)}>Remove</button>
+              </div>
             </div>
           ))}
         </div>
